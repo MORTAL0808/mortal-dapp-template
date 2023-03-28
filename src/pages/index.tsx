@@ -3,16 +3,13 @@ import { useAccount } from 'wagmi'
 
 import { Account } from '../components'
 
-function Page() {
+function Home() {
   const { isConnected } = useAccount()
   return (
     <>
-      <h1>wagmi + RainbowKit + Next.js</h1>
-
-      <ConnectButton />
-      {isConnected && <Account />}
+      
     </>
   )
 }
 
-export default Page
+export default Home
