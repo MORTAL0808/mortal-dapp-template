@@ -7,7 +7,7 @@ import WagmiProvider from '@/components/WagmiProvider'
 
 
 import '@rainbow-me/rainbowkit/styles.css'
-import '../styles/globals.css'
+import '@/styles/globals.css'
 
 
 function App({ Component, pageProps }: AppProps) {
