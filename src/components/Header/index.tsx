@@ -13,7 +13,7 @@ export function Header () {
         setTheme(themes[Math.floor(Math.random() * themes.length)])
     }
 
-    return <div className="flex justify-between items-center px-4 shadow-md h-16">
+    return <div className="flex justify-between items-center px-4 h-18 shadow-sm cursor-pointer border-b">
         <div className="flex items-center">
             <Image width={64} height={64} className="rounded-xl" src="/images/logo_avatar.png" alt="" />
             <div className="ml-2 text-xl font-bold">MORTAL DAPP</div>

@@ -52,7 +52,7 @@ export const MortalConnect = () => {
                 <div style={{ display: 'flex', gap: 12 }}>
                   <button
                     onClick={openChainModal}
-                    className="flex items-center text-black bg-white font-bold px-4 py-2 rounded-xl shadow-normal hover:scale-105 ease-in-out duration-100"
+                    className="flex items-center text-black bg-white font-bold px-3 py-2 rounded-xl shadow-normal hover:scale-105 ease-in-out duration-100"
                     type="button"
                   >
                     {chain.hasIcon && (
@@ -63,7 +63,7 @@ export const MortalConnect = () => {
                           height: 20,
                           borderRadius: 999,
                           overflow: 'hidden',
-                          marginRight: 4,
+                          marginRight: 5,
                         }}
                       >
                         {chain.iconUrl && (
@@ -78,7 +78,8 @@ export const MortalConnect = () => {
                     )}
                     {chain.name}
                   </button>
-                  <button onClick={openAccountModal} type="button" className='text-black bg-white font-bold px-4 py-2 rounded-xl shadow-normal hover:scale-105 ease-in-out duration-100'>
+                  <button onClick={openAccountModal} type="button" className='flex items-center text-black bg-white font-bold px-4 py-2 rounded-xl shadow-normal hover:scale-105 ease-in-out duration-100'>
+                    <div className='flex items-center justify-center bg-[#5fc6d4] w-7 h-7 mr-2 rounded-full'>🐒</div>
                     {account.displayName}
                     {account.displayBalance
                       ? ` (${account.displayBalance})`

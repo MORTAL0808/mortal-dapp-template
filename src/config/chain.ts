@@ -1,4 +1,5 @@
 import { publicConfig } from './public';
+import { Chain, goerli, mainnet, arbitrum, arbitrumGoerli, polygon, polygonMumbai, bsc, bscTestnet, iotex, iotexTestnet } from 'wagmi/chains';
 
 export type NetworkObject = {
   name: string;
@@ -8,8 +9,6 @@ export type NetworkObject = {
   explorerUrl: string;
   explorerName: string;
   nativeCoin: string;
-  // blockPerSeconds: number;
-  // multicallAddr: string;
   type: 'mainnet' | 'testnet';
 };
 
@@ -114,4 +113,22 @@ export const defaultNetworks: NetworkObject[] = [
     nativeCoin: 'IOTX',
     type: 'testnet'
   }
+];
+
+export const defaultChains: Chain[] = [
+  mainnet,
+  bsc,
+  // @ts-ignore
+  { ...iotex, iconUrl: 'https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@1a63530be6e374711a8554f31b17e4cb92c25fa5/svg/icon/iotx.svg' },
+  arbitrum,
+  polygon
+];
+
+export const defaultTestChains: Chain[] = [
+  goerli,
+  bscTestnet,
+  // @ts-ignore
+  { ...iotexTestnet, iconUrl: 'https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@1a63530be6e374711a8554f31b17e4cb92c25fa5/svg/icon/iotx.svg' },
+  polygonMumbai,
+  arbitrumGoerli
 ];
