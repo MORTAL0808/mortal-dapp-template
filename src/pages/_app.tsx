@@ -19,8 +19,8 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <WagmiProvider pageProps={pageProps}>
       <NextHead>
-        <title>MORTAL DAPP Template</title>
-        <link rel="shortcut icon" href="favicon.ico" />
+        <title>MORTAL DAPP</title>
+        <link rel="shortcut icon" href="/images/logo_avatar.png" />
       </NextHead>
       <Header />
       <Component {...pageProps} />
