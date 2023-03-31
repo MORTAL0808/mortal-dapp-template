@@ -9,3 +9,40 @@
 .main-container {
     height: calc(100vh - 64px);
 }
+
+.main-container .prefix {
+    display: none;
+}
+
+.daisyui-main table thead tr:first-child th input {
+    display: none !important;
+}
+
+.daisyui-main .not-prose:last-child, .not-prose:nth-last-child(2) {
+    display: none;
+}
+
+.daisyui-main h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.daisyui-main table {
+    margin-top: 10px;
+}
+
+.daisyui-main .tabs {
+    display: none;
+}
+
+.daisyui-main .preview {
+    gap: 20px;
+}
+
+.daisyui-main .btn {
+    gap: 5px
+}
+
+.daisyui-main .btn svg {
+    width: 24px;
+}

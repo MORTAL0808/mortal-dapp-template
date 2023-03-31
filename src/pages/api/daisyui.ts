@@ -7,7 +7,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     console.log('req', req.query)
     const { data } = await axios.get(`https://daisyui.com/components/${req.query.type}/`);
     const $ = cheerio.load(data);
-    const content = $('.not-prose').html();
+    const content = $('.prose').html();
     res.status(200).json({ content });
   } catch (error) {
     console.error(error);

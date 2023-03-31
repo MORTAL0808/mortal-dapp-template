@@ -25,7 +25,7 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/images/logo_avatar.png" />
       </NextHead>
       <Header />
-      <m.div className="main-container" layout>
+      <m.div className="main-container">
         <Component {...pageProps} />
       </m.div>
     </WagmiProvider>
