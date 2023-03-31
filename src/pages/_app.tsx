@@ -8,6 +8,8 @@ import WagmiProvider from '@/components/WagmiProvider'
 
 import '@rainbow-me/rainbowkit/styles.css'
 import '@/styles/globals.css'
+import { LazyMotion, m } from "framer-motion"
+
 
 
 function App({ Component, pageProps }: AppProps) {
@@ -23,7 +25,9 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/images/logo_avatar.png" />
       </NextHead>
       <Header />
-      <Component {...pageProps} />
+      <m.div className="main-container" layout>
+        <Component {...pageProps} />
+      </m.div>
     </WagmiProvider>
   )
 }

@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
 const Home: NextPage = () => {
   return (
-    <div className="flex justify-center mt-[30vh]">
+    <div className="flex justify-center pt-[30vh]">
       <label className="swap swap-flip text-9xl">
         <input type="checkbox" />
         <div className="swap-on">😈</div>
